@@ -1,0 +1,48 @@
+
+
+<div class="row header">
+			<div class="col-md-12">
+				<h3 class="logo">
+					<a href="<%= root_path %>">Speckless</a>
+				</h3>
+				<h4>Resend confirmation instructions</h4>
+				<p>
+					Provide your email address and we will resend you confirmation instructions.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="wrapper clearfix">
+					<div class="formy">
+						<div class="row">
+							<div class="col-md-12">
+
+								<%= devise_error_messages! %>
+
+									
+							<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post },:html => {:role => "form"}) do |f| %>
+							  		<div class="form-group">
+							    		<label for="email">Email address</label>
+							    		 <%= f.email_field :email, autofocus: true, :class=>"form-control" %>
+							  		</div>
+
+
+							  		<div class="submit">
+
+							  		  <%= f.submit "Resend confirmation instructions", :class=>"button" %>
+							  			
+							  		</div>
+								<% end -%>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="already-account">
+					<%= render "user/shared/links" %>
+				</div>
+
+				
+
+			</div>
+		</div>

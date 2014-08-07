@@ -1,0 +1,581 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>Speckless</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	 <%= stylesheet_link_tag    "compiled/theme" %>
+	 <%= stylesheet_link_tag    "vendor/animate" %>
+	 <%= stylesheet_link_tag    "vendor/brankic" %>
+	 <%= stylesheet_link_tag    "vendor/font-awesome.min" %>
+
+	<!-- javascript -->
+	<%= javascript_include_tag "jquery.min" %>
+	<%= javascript_include_tag "bootstrap.min" %>
+	<%= javascript_include_tag "theme" %>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="home2">
+	<header class="navbar navbar-inverse white" role="banner">
+  		<div class="container">
+    		<div class="navbar-header">
+      			<a href="index.html" class="navbar-brand">Speckless</a>
+    		</div>
+    		<!-- put nav here --> <a href="<%= new_user_session_path %>" class="pull-right button login-button">Login</a>
+  		</div>
+	</header>
+
+	<div id="hero">
+		<a class="slide-nav prev" href="#">Prev</a>
+		<a class="slide-nav next" href="#">Next</a>
+		<nav>
+			<a class="active" href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</nav>
+		<div class="slides">
+			<div class="slide first active">
+				<div class="bg"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 info">
+							<h1 class="hero-text">
+								Get real-time status updates.
+							</h1>
+							<p>
+								Know exactly where your laundry is at any point in time
+							</p>
+							<div class="cta">
+								<a href="<%= new_user_registration_path %>" class="button-outline">
+									Get Started
+									<i class="fa fa-chevron-right"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6 hidden-xs mobiles">
+							<!-- <% image_tag "static-hero.png", :class=>"animated fadeInLeft" %> -->
+							<%= image_tag "devices3.png", :class=>"animated fadeInLeft img-responsive" %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide second">
+				<div class="bg"></div>
+				<div class="container">
+					<h1 class="hero-text">Look sharp. Stay fresh.</h1>
+					<p class="sub-text">
+						Dry cleaning & laundry delivered to your door-step
+					</p>
+					<div class="video-wrapper">
+						<div class="video animated fadeInUp">
+							<%= image_tag "player.png", :id=>"demo-player" %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide third">
+				<div class="bg"></div>
+				<div class="container">
+					<h1 class="hero-text animated fadeInLeft">
+						Why waste time? Get Speckless!
+					</h1>
+					<p class="sub-text animated fadeInLeft">
+				      Get your laundry done as soon as 48 hours
+					</p>
+					<div class="cta animated fadeInRight">
+						<!--<a href="features.html" class="button-outline">See the tour</a>-->
+						<a href="<%= new_user_registration_path %>" class="button">Sign up free</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="video-modal">
+			<div class="wrap">
+				<iframe src="http://player.vimeo.com/video/22439234" width="620" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+
+
+
+		<div id="features">
+		<div class="container">
+			<div class="row header">
+				<div class="col-md-12">
+					<h2>How Speckless works!</h2>
+					<p>Just follow these simple steps.</p>
+				</div>
+			</div>
+			<div class="row feature">
+				<div class="col-md-4 info">
+					<center>
+						<h4>Step 1</h4>
+						<h4>Schedule a pickup.</h4>
+						<p>
+							<%= image_tag "icons/schedule.png" %>
+						</p>
+					</center>
+				</div>
+				<div class="col-md-4 info">
+					<center>
+						<h4>Step 2</h4>
+						<h4>We pickup and clean your order.</h4>
+						<p>
+							<%= image_tag "icons/ship.png" %>
+						</p>
+					</center>
+				</div>
+				<div class="col-md-4 info">
+					<center>
+						<h4>Step 3</h4>
+						<h4>Enjoy Life.</h4>
+						<p>
+							<%= image_tag "icons/love.png" %>
+						</p>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div id="features">
+<div class="divider"></div>
+</div>
+
+
+	<div id="features">
+		<div class="container">
+			<div class="row header">
+				<div class="col-md-12">
+					<h2>Why Speckless?</h2>
+				</div>
+			</div>
+			<div class="row feature">
+				<div class="col-md-6 info">
+					<h4>Reinventing dry cleaning and laundry.</h4>
+					<p>
+						Speckless is creating a seamless dry cleaning laundry experience designed entirely around your needs. We pick-up and drop-off at your door. We deliver on your schedule. We provide full transparency with everything we do. Some see it as revolutionary. We see it as common sense
+					</p>
+				</div>
+				<div class="col-md-6 image">
+					<%= image_tag "folded-towels.jpg", :class=>"img-responsive" %>
+				</div>
+			</div>
+			<div class="divider"></div>
+			<div class="row feature backwards">
+				<div class="col-md-6 info">
+					<h4>Incredible quality, incredible service</h4>
+					<p>
+						Our world-class customer service is something we take immense pride in. Service is meaningless without quality, though. We only work with incredibly qualified cleaners, and we inspect every item we receive, so that the clothes you get back are spotless and ready for action.
+					</p>
+					
+				</div>
+				<div class="col-md-6 image">
+					<%= image_tag "folded-shirts.jpg", :class=>"img-responsive" %>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div id="pricing">
+		<div class="container">
+			<div class="row header">
+				<h3>Free trial. No contract. Cancel when you want.</h3>
+				<p>All plans include a 7-day free trial</p>
+			</div>
+			<div class="row charts">
+				<div class="col-md-4">
+					<div class="chart first">
+						<div class="quantity">
+							<span class="dollar">$</span>
+							<span class="price">29</span>
+							<span class="period">/month</span>
+						</div>
+						<div class="plan-name">Freelance</div>
+						<div class="specs">
+							<div class="spec">
+								<span class="variable">5</span>
+								team members
+							</div>
+							<div class="spec">
+								<span class="variable">Digital</span>
+								recurring billing
+							</div>
+							<div class="spec">
+								<span class="variable">Virtual</span>
+								online terminal
+							</div>
+							<div class="spec">
+								<span class="variable">10</span>
+								total products
+							</div>
+							<div class="spec">
+								<span class="variable">1.0%</span>
+								Transaction fee
+							</div>
+						</div>
+						<a class="btn-signup button-clear" href="signup.html">
+							<span>Start free trial</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="chart featured">
+						<div class="popular">Most popular</div>
+						<div class="quantity">
+							<span class="dollar">$</span>
+							<span class="price">79</span>
+							<span class="period">/month</span>
+						</div>
+						<div class="plan-name">Profesional</div>
+						<div class="specs">
+							<div class="spec">
+								<span class="variable">15</span>
+								team members
+							</div>
+							<div class="spec">
+								<span class="variable">Digital</span>
+								recurring billing
+							</div>
+							<div class="spec">
+								<span class="variable">Virtual</span>
+								online terminal
+							</div>
+							<div class="spec">
+								<span class="variable">15</span>
+								total products
+							</div>
+							<div class="spec">
+								<span class="variable">0.5%</span>
+								Transaction fee
+							</div>
+						</div>
+						<a class="btn-signup button-clear" href="signup.html">
+							<span>Start free trial</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="chart last">
+						<div class="quantity">
+							<span class="dollar">$</span>
+							<span class="price">119</span>
+							<span class="period">/month</span>
+						</div>
+						<div class="plan-name">Premium</div>
+						<div class="specs">
+							<div class="spec">
+								<span class="variable">Unlimited</span>
+								team members
+							</div>
+							<div class="spec">
+								<span class="variable">Digital</span>
+								recurring billing
+							</div>
+							<div class="spec">
+								<span class="variable">Virtual</span>
+								online terminal
+							</div>
+							<div class="spec">
+								<span class="variable">25</span>
+								total products
+							</div>
+							<div class="spec">
+								<span class="variable">No</span>
+								Transaction fee
+							</div>
+						</div>
+						<a class="btn-signup button-clear" href="signup.html">
+							<span>Start free trial</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="testimonials">
+		<div class="container">
+			<div class="row header">
+				<div class="col-md-12">
+					<h3>Our customers love us:</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="testimonial pull-right">
+						<div class="quote">
+							They do an amazing job on all my shirts and even fix missing buttons that I didn't know I had. 
+							<div class="arrow-down">
+				                <div class="arrow"></div>
+				                <div class="arrow-border"></div>
+				            </div>
+						</div>
+						<div class="author">
+							<%= image_tag "testimonials/testimonial1.jpg", :class=>"pic" %>
+							<div class="name">Erick Alvarez</div>
+							<div class="company">Microsoft</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="testimonial pull-right">
+						<div class="quote">
+							Just had my first pickup. What an awesome service!
+							<div class="arrow-down">
+				                <div class="arrow"></div>
+				                <div class="arrow-border"></div>
+				            </div>
+						</div>
+						<div class="author">
+							<%= image_tag "testimonials/testimonial1.jpg", :class=>"pic" %>
+							<div class="name">Erick Alvarez</div>
+							<div class="company">Microsoft</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="testimonial">
+						<div class="quote">
+							It has made the annoyance of going to the dry cleaner completely painless!
+							<div class="arrow-down">
+				                <div class="arrow"></div>
+				                <div class="arrow-border"></div>
+				            </div>
+						</div>
+						<div class="author">
+							<%= image_tag "testimonials/testimonial2.jpg", :class=>"pic" %>
+							<div class="name">Karen Jones</div>
+							<div class="company">Pixar Co.</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+
+<div class="divider"></div>
+
+
+		<div id="cta">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="wrapper clearfix">
+							<h4>Get Speckless now and take your laundry care to a whole new level.</h4>
+							<a href="<%= new_user_session_path %>" class="button button-small">Schedule your first pickup.</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br><br><br><br>
+
+
+
+	<div id="footer-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 menu">
+					<h3>Overview</h3>
+					<ul>
+	      				<li>
+	          				<a href="features.html">Features</a>
+	        			</li>
+	        			<li>
+	        				<a href="services.html">Services</a>
+	        			</li>
+	        			<li>
+	          				<a href="pricing.html">Pricing</a>
+	        			</li>
+	        			<li>
+	          				<a href="support.html">Support</a>
+	        			</li>
+	        			<li>
+	          				<a href="blog.html">Blog</a>
+	        			</li>
+	        			<li>
+	          				<a href="blog.html">Coming soon</a>
+	        			</li>
+	      			</ul>
+				</div>
+				<div class="col-sm-3 menu">
+					<h3>Menu</h3>
+					<ul>
+	      				<li>
+	          				<a href="features.html">About us</a>
+	        			</li>
+	        			<li>
+	        				<a href="services.html">Contact us</a>
+	        			</li>
+	        			<li>
+	          				<a href="aboutus.html">Jobs</a>
+	          				<a href="aboutus.html" class="hiring">
+	          					We're hiring!
+	          				</a>
+	        			</li>
+	        			<li>
+	          				<a href="support.html">Portfolio</a>
+	        			</li>
+	        			<li>
+	          				<a href="blog.html">Status</a>
+	        			</li>
+	      			</ul>
+				</div>
+				<div class="col-sm-2 menu">
+					<h3>Social</h3>
+					<ul>
+	      				<li>
+	          				<a href="features.html">Youtube</a>
+	        			</li>
+	        			<li>
+	        				<a href="services.html">Facebook</a>
+	        			</li>
+	        			<li>
+	          				<a href="pricing.html">Twitter</a>
+	        			</li>
+	      			</ul>
+				</div>
+				<div class="col-sm-4 newsletter">
+					<div class="signup clearfix">
+						<p>
+							Sign up for the newsletter and we'll inform you of updates, offers and more.
+						</p>
+						<form>
+							<input type="text" name="email" class="form-control" placeholder="Your email address" />
+							<input type="submit" value="Sign up" />
+						</form>
+					</div>
+					<a href="#">
+						<%= image_tag "social/social-tw.png" %>
+					</a>
+					<a href="#">
+						<%= image_tag "social/social-fb.png" %>
+					</a>
+				</div>
+			</div>
+			<div class="row credits">
+				<div class="col-md-12">
+					Copyright © 2014. Speckless
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+			var $navDots = $("#hero nav a")
+			var $next = $(".slide-nav.next");
+			var $prev = $(".slide-nav.prev");
+			var $slides = $("#hero .slides .slide");
+			var actualIndex = 0;
+			var swiping = false;
+			var interval;
+
+			$navDots.click(function (e) {
+				e.preventDefault();
+				if (swiping) { return; }
+				swiping = true;
+
+				actualIndex = $navDots.index(this);
+				updateSlides(actualIndex);
+			});
+
+			$next.click(function (e) {
+				e.preventDefault();
+				if (swiping) { return; }
+				swiping = true;
+
+				clearInterval(interval);
+				interval = null;
+
+				actualIndex++;
+				if (actualIndex >= $slides.length) {
+					actualIndex = 0;
+				}
+
+				updateSlides(actualIndex);
+			});
+
+			$prev.click(function (e) {
+				e.preventDefault();
+				if (swiping) { return; }
+				swiping = true;
+
+				clearInterval(interval);
+				interval = null;
+
+				actualIndex--;
+				if (actualIndex < 0) {
+					actualIndex = $slides.length - 1;
+				}
+
+				updateSlides(actualIndex);
+			});
+
+			function updateSlides(index) {
+				// update nav dots
+				$navDots.removeClass("active");
+				$navDots.eq(index).addClass("active");
+
+				// update slides
+				var $activeSlide = $("#hero .slide.active");
+				var $nextSlide = $slides.eq(index);
+
+				$activeSlide.fadeOut();
+				$nextSlide.addClass("next").fadeIn();
+				
+				setTimeout(function () {
+					$slides.removeClass("next").removeClass("active");
+					$nextSlide.addClass("active");
+					$activeSlide.removeAttr('style');
+					swiping = false;
+				}, 1000);
+			}
+
+
+			interval = setInterval(function () {
+				if (swiping) { return; }
+				swiping = true;
+
+				actualIndex++;
+				if (actualIndex >= $slides.length) {
+					actualIndex = 0;
+				}
+
+				updateSlides(actualIndex);
+			}, 5000);
+
+			// demo player
+			var $videoModal = $(".video-modal");
+			$("#demo-player").click(function () {
+				$videoModal.toggleClass("active");
+				clearInterval(interval);
+				interval = null;
+			});
+			$videoModal.click(function () {
+				$videoModal.removeClass("active");
+				setTimeout(function () {
+					$videoModal.find(".wrap").html('<iframe src="http://player.vimeo.com/video/22439234" width="620" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+				}, 1000);
+			})
+			$videoModal.find(".wrap").click(function (e) {
+				e.stopPropagation();
+			});
+		});
+	</script>
+</body>
+</html>
